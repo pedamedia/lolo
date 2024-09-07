@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Asdruel Fuente";
+    src: url("fuentes/Asdruel.ttf");
+}
+
+* {
+    margin: 10px; /* Ajusta el valor según tus necesidades */
+    font-family: "Asdruel Fuente";
+}
+
+body{
+    background-color: blue;
+
+}
+
+#cabeza{
+    background-color: red;
+    display: inline-block;
+    padding: 20px;
+}
+
+#prueba{
+
+    justify-content: center;
+}
+
+#pie{
+    background-color: coral;
+    text-align: center;
+}
+
+nav{
+    background-color: aqua;
+}
+
+li{
+    background-color: blueviolet;
+}
+
+aside{
+    background-color: azure;
+}
+
+section{
+    background-color: bisque;
+    flex-grow: 1; 
+}
+
+div{
+    display: flex;
+}
+
+img{
+    width: 200px;
+    height:200px;
+    border-radius: 20px;
+}
+
+#formulario{
+
+    display: flex;
+    flex-direction: column;
+
+}
