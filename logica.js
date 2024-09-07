@@ -20,7 +20,7 @@ async function ejecutar(event){
     const clave_var = document.getElementById('idclave').value;
     const correo_var = document.getElementById('idcorreo').value;
 
-    url ='http://localhost:5000'
+    url ='https://lolo-piso.onrender.com'
 
     try {
         const response = await fetch(url+'/data', 
