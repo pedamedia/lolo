@@ -3,7 +3,7 @@ let imagen;
 
 let texto="";
 
-const url ='http://localhost:5000'
+const url ='https://lolo-piso.onrender.com'
 
 const params = new URLSearchParams(window.location.search);
 const nuevoTexto = params.get('texto');
