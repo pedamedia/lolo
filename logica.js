@@ -16,15 +16,18 @@ async function ejecutar(event){
 
     event.preventDefault();
 
+    const info = new FormData(this);
+
     const usuario_var = document.getElementById('idusuario').value;
     const clave_var = document.getElementById('idclave').value;
     const correo_var = document.getElementById('idcorreo').value;
 
-    url ='https://lolo-piso.onrender.com'
+    url ='http://localhost:5000'
 
     try {
-        const response = await fetch(url+'/data', 
+        const response = await fetch(url+'/solicitud', 
         {
+            /*
             method: 'POST',
             headers: {'Content-Type': 'application/json',},
             body: JSON.stringify(
@@ -33,10 +36,22 @@ async function ejecutar(event){
                     correo: correo_var, 
 
                 }),
+
+            */
+            method: 'POST',
+            body: info
         });
 
-        const resultado = await response.json();
+        //const resultado_json = await response.json();
+        //const resultado = resultado_json.data;
 
+        //const resultado = await response.formData();
+
+        const resultado = await response.text();
+
+        document.getElementById('idrespuesta').innerText = resultado;
+
+        /*
         if (Array.isArray(resultado)) {
 
             resultado.forEach(item => {
@@ -50,16 +65,19 @@ async function ejecutar(event){
         } else {
             console.error('La respuesta no es una lista.');
         }
+        */
         
         console.log("Esta es la respuesta: "+resultado);
     } catch (error) {
         console.error('Error:', error);
     }
 
+    //this.submit();
+
+
 }
 
-
-
+//------------------------------------------------------------------------------
 
 function ejecutar_al_cargar(){
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -46,10 +46,16 @@
 
         <p> Parrafo de ejemplo, mucho mucho texto y más</p>
 
-        <form id="formulario">
+        <form id="formulario" enctype="multipart/form-data">
+            
+            <label for="idusuario">Nombre:</label>
             <input type="text" id="idusuario" name="usuario" placeholder="Enter your name">
+            <br><br><br>
             <input type="email" id="idcorreo" name="correo" placeholder="Enter your email" required>
             <input type="password" id="idclave" name="clave" placeholder="Enter your password">
+            
+            <input type="file" id="fileUpload" name="archivo" accept=".pdf,.doc,.txt">
+            
             <button type="submit" >Send</button>
         </form>
 
