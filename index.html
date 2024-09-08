@@ -26,10 +26,10 @@
     <nav>
         <ul>
             <div>
-            <li>opción primera</li>
-            <li>opción segunda</li>
-            <li>opción tercera</li>
-            <li>opción cuarta</li>
+                <li id="idmostrar1">opción primera</li>
+                <li id="idmostrar2">opción segunda</li>
+                <li>opción tercera</li>
+                <li>opción cuarta</li>
             </div>
         </ul>
     </nav>
@@ -42,7 +42,7 @@
         <blockquote>cuarto elemento</blockquote>
     </aside>
 
-    <section>
+    <section id="idsection1">
 
         <p> Parrafo de ejemplo, mucho mucho texto y más</p>
 
@@ -50,21 +50,20 @@
             
             <label for="idusuario">Nombre:</label>
             <input type="text" id="idusuario" name="usuario" placeholder="Enter your name">
-            <br><br><br>
+            <br>
             <input type="email" id="idcorreo" name="correo" placeholder="Enter your email" required>
+            <br>
             <input type="password" id="idclave" name="clave" placeholder="Enter your password">
-            
+            <br>
             <input type="file" id="fileUpload" name="archivo" accept=".pdf,.doc,.txt">
-            
+            <br>
             <button type="submit" >Send</button>
         </form>
 
-        
-        
         <p id="idrespuesta"></p>
 
+    
         <article>
-
             <header> 
                 <hgroup>
                     <h1>Título de la Noticia 1</h1>
@@ -73,7 +72,7 @@
             </header>
 
             <figure>
-                <img src="imagenes/foto.jpg"/>
+                <img src="imagenes/foto.jpg" oncontextmenu="return false;"/>
                 <figcaption> Foto de la bebe Hoshy</figcaption>
             </figure>
 
@@ -96,6 +95,31 @@
             <p> Se sigue hablando de la Noticia 3</p>
             <p> Se termina de hablar de la Noticia 3</p>
         </article>
+
+    </section>
+    <section id="idsection2">
+
+        <form id="formulario2" enctype="multipart/form-data">
+                
+            <label for="idbuscar">Buscar:</label>
+            <input type="text" id="idbuscar" name="buscar" placeholder="Buscar">
+            
+            <button type="submit" >Search</button>
+        </form>
+
+        <!--
+        <iframe src="pdf-viewer" type="application/pdf"></iframe>
+        -->
+        <img src="imagenes/cargando.gif" id="carga" alt="Cargando..." style="display:none"> <!-- Indicador de carga -->
+        
+        <div id="no-right-click2">
+
+            <embed id="pdf-viewer" style="display:none;" type="application/pdf"">
+            <div id="no-right-click"></div>
+            <!--
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0);" ></div>
+        -->
+        </div>
 
     </section>
     </div>
