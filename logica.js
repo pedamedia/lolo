@@ -3,7 +3,7 @@ let imagen;
 
 let texto="";
 
-const url ='https://lolo-piso.onrender.com'
+const url ='http://localhost:5000'
 
 const params = new URLSearchParams(window.location.search);
 const nuevoTexto = params.get('texto');
@@ -20,9 +20,9 @@ async function ejecutar(event){
 
     const info = new FormData(this);
 
-    const usuario_var = document.getElementById('idusuario').value;
-    const clave_var = document.getElementById('idclave').value;
-    const correo_var = document.getElementById('idcorreo').value;
+    const nombre_var = document.getElementById('idnombre');
+    const correo_var = document.getElementById('idcorreo');
+    const programa_var = document.getElementById('idprograma');
 
     try {
         const response = await fetch(url+'/solicitud', 
@@ -66,13 +66,19 @@ async function ejecutar(event){
             console.error('La respuesta no es una lista.');
         }
         */
-        
+    /*
+        nombre_var.value = "";
+        correo_var.value = "";
+        programa_var.value = "";
+        */
+
+        alert("ENVÍO DE FORMULARIO\n¡¡¡EXITOSO!!!");    
         console.log("Esta es la respuesta: "+resultado);
     } catch (error) {
         console.error('Error:', error);
     }
 
-    //this.submit();
+    this.reset();
 }
 
 if (nuevoTexto) {
@@ -80,7 +86,7 @@ if (nuevoTexto) {
 }
 
 
-async function otro(event){
+async function fun_obtencion(event){
 
     event.preventDefault();
     const carga = document.getElementById('carga');
@@ -92,7 +98,7 @@ async function otro(event){
     const info2 = new FormData(this);
 
     try {
-        const response = await fetch(url+'/otro', 
+        const response = await fetch(url+'/obtencion', 
         {
             method: 'POST',
             body: info2
@@ -144,6 +150,38 @@ async function recibir(){
     */
 }
 
+async function ingreso(event){
+
+    event.preventDefault();
+
+    const info= new FormData(this);
+
+    try {
+        const response = await fetch(url+'/inicio', 
+        {
+            method: 'POST',
+            body: info
+        });
+
+        const resultado = await response.text(); 
+        console.log(resultado);
+
+        const inicio = document.getElementById('idinicio')
+        const principal = document.getElementById('idprincipal')
+
+        if(resultado == "si"){
+            inicio.style.display = "none";
+            principal.style.display = "block";
+        }else{
+            alert("CLAVE O USUARIO\nINCORRECTAS")
+        }
+        
+       
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+
 //------------------------------------------------------------------------------
 
 function ejecutar_al_cargar(){
@@ -152,46 +190,61 @@ function ejecutar_al_cargar(){
 
     const visualizador = document.getElementById('pdf-viewer');
     
-
     document.getElementById('formulario').onsubmit = ejecutar;
-    document.getElementById('formulario2').onsubmit = otro;
+    document.getElementById('formulario2').onsubmit = fun_obtencion;
+    document.getElementById('idlogueo').onsubmit = ingreso;
+    
     //document.getElementById('dataForm').addEventListener('submit',ejecutar);
 
     let primera = document.getElementById('idmostrar1');
     let segunda = document.getElementById('idmostrar2');
+    let tercera = document.getElementById('idmostrar3');
+    let cuarto = document.getElementById('idmostrar4');
+    let salir = document.getElementById('idsalir');
 
     let seccion1 = document.getElementById('idsection1');
     let seccion2 = document.getElementById('idsection2');
-
-    seccion1.style.display = "block"
-    seccion2.style.display = "none"
+    let seccion3 = document.getElementById('idsection3');
+    let seccion4 = document.getElementById('idsection4');
 
     primera.addEventListener('click', function() {
-        // Mostrar sección 1 y ocultar sección 2
+        
         seccion1.style.display = "block"
         seccion2.style.display = "none"
+        seccion3.style.display = "none"
+        seccion4.style.display = "none"
+    });
 
-        console.log("llega primera")
+    segunda.addEventListener('click', function() {
+        
+        seccion1.style.display = "none"
+        seccion2.style.display = "block"
+        seccion3.style.display = "none"
+        seccion4.style.display = "none"
     });
     
-    segunda.addEventListener('click', function() {
-        // Mostrar sección 2 y ocultar sección 1
-        seccion2.style.display = "block"
-        seccion1.style.display = "none"
+    tercera.addEventListener('click', function() {
         
-        console.log("llega segunda")
+        seccion1.style.display = "none"
+        seccion2.style.display = "none"
+        seccion3.style.display = "block"
+        seccion4.style.display = "none"
     });
 
-    console.log("INICIO")
+    cuarto.addEventListener('click', function() {
+        
+        seccion1.style.display = "none"
+        seccion2.style.display = "none"
+        seccion3.style.display = "none"
+        seccion4.style.display = "block"
+    });
 
+    salir.addEventListener('click', function() {
+        window.location.reload();
+    });
 
+    console.log("----VERSION 4.0------")
 
-}
-
-function handleClick() {
-    alert('Haz hecho clic en el elemento LI');
-
-    console.log("si entra")
 }
 
 

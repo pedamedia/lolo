@@ -1,133 +1,169 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Simple Frontend</title>
 
     <script src="logica.js"></script>
-    
-    <link rel="stylesheet" href="estilo.css"/>
+
+    <link rel="stylesheet" href="estilo.css" />
 
 </head>
+
+
 <body>
 
-    <div id="prueba">
+    <div id="idinicio">
 
-    <header id="cabeza">
-
-        <h1>Send Request to Cloud</h1>
-
-    </header>
+        <form id="idlogueo" enctype="multipart/form-data">
+            <h1>LOLO</h1>
+            <label for="idcorreologueo" >Correo:</label>
+            <input type="email" id="idcorreologueo" name="correo" placeholder="correo@ejemplo.com" required>
+            <label for="idclavelogueo">Clave:</label>
+            <input type="password" id="idclavelogueo" name="clave" placeholder="**********" required>
+            <button id="idingresar" type="submit">Ingresar</button>
+        </form>
 
     </div>
 
-    <nav>
-        <ul>
-            <div>
-                <li id="idmostrar1">opción primera</li>
-                <li id="idmostrar2">opción segunda</li>
-                <li>opción tercera</li>
-                <li>opción cuarta</li>
-            </div>
-        </ul>
-    </nav>
+    <div id="idprincipal">
 
-    <div>
-    <aside>
-        <blockquote>primer elemento</blockquote>
-        <blockquote>segundo elemento</blockquote>
-        <blockquote>tercer elemento</blockquote>
-        <blockquote>cuarto elemento</blockquote>
-    </aside>
+        <div id="prueba">
 
-    <section id="idsection1">
+            <header id="cabeza">
 
-        <p> Parrafo de ejemplo, mucho mucho texto y más</p>
+                <h1>Send Request to Cloud</h1>
 
-        <form id="formulario" enctype="multipart/form-data">
-            
-            <label for="idusuario">Nombre:</label>
-            <input type="text" id="idusuario" name="usuario" placeholder="Enter your name">
-            <br>
-            <input type="email" id="idcorreo" name="correo" placeholder="Enter your email" required>
-            <br>
-            <input type="password" id="idclave" name="clave" placeholder="Enter your password">
-            <br>
-            <input type="file" id="fileUpload" name="archivo" accept=".pdf,.doc,.txt">
-            <br>
-            <button type="submit" >Send</button>
-        </form>
-
-        <p id="idrespuesta"></p>
-
-    
-        <article>
-            <header> 
-                <hgroup>
-                    <h1>Título de la Noticia 1</h1>
-                    <h1><mark>subtítulo de la Noticia 1</mark></h1>
-                </hgroup>
             </header>
 
-            <figure>
-                <img src="imagenes/foto.jpg" oncontextmenu="return false;"/>
-                <figcaption> Foto de la bebe Hoshy</figcaption>
-            </figure>
+        </div>
 
-            <p> Noticia 1</p>
-            <p> <strong>Se sigue hablando de la Noticia 1</strong></p>
-            <p> Se termina de hablar de la Noticia 1</p>
-            <footer> comentarios de la noticia 1</footer>
-        </article>
+        <nav>
+            <ul>
+                <div>
+                    <li id="idmostrar1">opción primera</li>
+                    <li id="idmostrar2">opción segunda</li>
+                    <li id="idmostrar3">opción tercera</li>
+                    <li id="idmostrar4">opción cuarta</li>
+                    <li id="idsalir">Salir</li>
+                </div>
+            </ul>
+        </nav>
 
-        <article>
-            <p> Noticia 2</p>
-            <p> Se sigue hablando de la Noticia 2</p>
-            <p> Se termina de hablar de la Noticia 2</p>
+        <div id="sec-nav">
+            <aside>
+                <blockquote>primer elemento</blockquote>
+                <blockquote>segundo elemento</blockquote>
+                <blockquote>tercer elemento</blockquote>
+                <blockquote>cuarto elemento</blockquote>
+            </aside>
 
-            <time datetime="1996/03/07">Noticia publicada en 07/03/1996</time>
-        </article>
+            <section id="idsection1">
 
-        <article>
-            <p> Noticia 3</p>
-            <p> Se sigue hablando de la Noticia 3</p>
-            <p> Se termina de hablar de la Noticia 3</p>
-        </article>
+                <article>
+                    <header>
+                        <hgroup>
+                            <h1>Título de la Noticia 1</h1>
+                            <h1><mark>subtítulo de la Noticia 1</mark></h1>
+                        </hgroup>
+                    </header>
 
-    </section>
-    <section id="idsection2">
+                    <figure>
+                        <img src="imagenes/foto.jpg" oncontextmenu="return false;" />
+                        <figcaption> Foto de la bebe Hoshy</figcaption>
+                    </figure>
 
-        <form id="formulario2" enctype="multipart/form-data">
-                
-            <label for="idbuscar">Buscar:</label>
-            <input type="text" id="idbuscar" name="buscar" placeholder="Buscar">
-            
-            <button type="submit" >Search</button>
-        </form>
+                    <p> Noticia 1</p>
+                    <p> <strong>Se sigue hablando de la Noticia 1</strong></p>
+                    <p> Se termina de hablar de la Noticia 1</p>
+                    <footer> comentarios de la noticia 1</footer>
+                </article>
 
-        <!--
+                <article>
+                    <p> Noticia 2</p>
+                    <p> Se sigue hablando de la Noticia 2</p>
+                    <p> Se termina de hablar de la Noticia 2</p>
+
+                    <time datetime="1996/03/07">Noticia publicada en 07/03/1996</time>
+                </article>
+
+                <article>
+                    <p> Noticia 3</p>
+                    <p> Se sigue hablando de la Noticia 3</p>
+                    <p> Se termina de hablar de la Noticia 3</p>
+                </article>
+
+            </section>
+            <section id="idsection2" style="display:none;">
+
+                <p> FORMULARIO</p>
+
+                <form id="formulario" enctype="multipart/form-data">
+
+                    <label for="idnombre">Nombre:</label>
+                    <br>
+                    <input type="text" id="idnombre" name="nombre" placeholder="Enter your name" required>
+                    <br><br>
+                    <label for="idcorreo">Correo:</label>
+                    <br>
+                    <input type="email" id="idcorreo" name="correo" placeholder="Enter your email" required>
+                    <br><br>
+                    <label for="idprograma">Programa:</label>
+                    <br>
+                    <input type="text" id="idprograma" name="programa" placeholder="Enter your password" required>
+                    <br><br>
+                    <label for="idarchivo">Suba un archivo:</label>
+                    <br>
+                    <input type="file" id="idarchivo" name="archivo" accept=".pdf" required>
+                    <br><br>
+                    <button type="submit">Enviar</button>
+                </form>
+
+                <p id="idrespuesta"> </p>
+
+            </section>
+            <section id="idsection3" style="display:none;">
+
+                <form id="formulario2" enctype="multipart/form-data">
+
+                    <label for="idbuscar">Buscar:</label>
+                    <input type="text" id="idbuscar" name="buscar" placeholder="Buscar">
+
+                    <button type="submit">Search</button>
+                </form>
+
+                <!--
         <iframe src="pdf-viewer" type="application/pdf"></iframe>
         -->
-        <img src="imagenes/cargando.gif" id="carga" alt="Cargando..." style="display:none"> <!-- Indicador de carga -->
-        
-        <div id="no-right-click2">
+                <img src="imagenes/cargando.gif" id="carga" alt="Cargando..." style="display:none">
+                <!-- Indicador de carga -->
 
-            <embed id="pdf-viewer" style="display:none;" type="application/pdf"">
-            <div id="no-right-click"></div>
-            <!--
+                <div id="no-right-click2">
+
+                    <embed id="pdf-viewer" style="display:none;" type="application/pdf"">
+            <div id=" no-right-click">
+                </div>
+                <!--
             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0);" ></div>
         -->
         </div>
 
-    </section>
+        </section>
+
+        <section id="idsection4" style="display:none;">
+            <img src="imagenes/flaming.gif">
+        </section>
     </div>
 
     <footer id="pie">
-        Pie de pagina. <small>Derechos reservados para yotas.</small>  <address>Telefono:4545555</address>
+        Pie de pagina. <small>Derechos reservados para yotas.</small>
+        <address>Telefono:4545555</address>
     </footer>
-
+    </div>
 
 </body>
+
 </html>
