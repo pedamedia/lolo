@@ -3,7 +3,7 @@ let imagen;
 
 let texto="";
 
-const url ='https://lolo-piso.onrender.com'
+const url ="https://lolo-piso.onrender.com"
 
 const params = new URLSearchParams(window.location.search);
 const nuevoTexto = params.get('texto');
@@ -11,6 +11,20 @@ const nuevoTexto = params.get('texto');
 // Si el parámetro "texto" existe en la URL, cambiar el valor de la variable
 if (nuevoTexto) {
     texto = nuevoTexto;
+}
+
+async function carga(){
+
+    try {
+        const response = await fetch(url+'/carga');
+
+        const resultado = await response.text();
+
+        console.log(resultado)
+
+    } catch (error) {
+        console.error('Error al cargar: ', error);
+    }
 }
 
 
@@ -185,6 +199,8 @@ async function ingreso(event){
 //------------------------------------------------------------------------------
 
 function ejecutar_al_cargar(){
+
+    carga();
     
     //document.addEventListener('contextmenu', event => event.preventDefault());
 
