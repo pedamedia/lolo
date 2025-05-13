@@ -20,34 +20,6 @@ La página web permite la sincronización automática de archivos desde un Drive
 * **Base de Datos:** MongoDB
 * **Cloud Storage:** Google Drive API
 
-## Instalación
-
-1. Clonar el repositorio:
-
-```bash
- git clone <url-repositorio>
-```
-
-2. Instalar dependencias del frontend y backend:
-
-```bash
- cd frontend && npm install
- cd ../backend && npm install
-```
-
-3. Configurar las variables de entorno para la integración con Google Drive y la base de datos MongoDB.
-
-4. Iniciar el servidor:
-
-```bash
- cd backend && npm run dev
-```
-
-5. Iniciar el frontend:
-
-```bash
- cd ../frontend && npm start
-```
 
 ## Contribución
 
@@ -56,7 +28,7 @@ Si quieres contribuir al proyecto, por favor realiza un fork del repositorio y c
 ## Créditos
 
 * **Juan Andrés Mayorga Zuluaga** - Desarrollador
-* **Fernando Mesa** - Colaborador y Exdirector del Departamento de Mecánica y Mecatrónica
+* **Ingeniero Fernando Mesa** - Colaborador y Exdirector del Departamento de Mecánica y Mecatrónica
 
 ## Licencia
 
