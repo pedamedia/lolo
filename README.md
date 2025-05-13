@@ -1,6 +1,6 @@
 # Proyecto Web para Trámites de Posgrado
 
-Proyecto académico realizado en el marco del soporte para el programa de acreditación internacional EUR-ACE del departamento de Ingeniería Mecánica y Mecatrónica de la facultad de Ingeniería de la Universidad Nacional de Colombia - sede bogotá. Este proyecto fue desarrollado en colaboración con el profesor Fernando Mesa, exdirector del departamento. La aplicación tiene como objetivo automatizar y optimizar el manejo de archivos y solicitudes para estudiantes que realizaban trámites de posgrado y agilizar algunas tareas recurrentes del programa.
+Proyecto académico realizado en el marco del soporte para el programa de acreditación internacional EUR-ACE del departamento de Ingeniería Mecánica y Mecatrónica de la facultad de Ingeniería de la Universidad Nacional de Colombia - sede bogotá. Este proyecto fue desarrollado en colaboración con el profesor Fernando Mesa, exdirector del departamento. La aplicación tiene como objetivo automatizar y optimizar el manejo de archivos y solicitudes de estudiantes que realizaban trámites de posgrado y agilizar algunas tareas recurrentes del programa.
 
 ## Descripción
 
