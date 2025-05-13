@@ -1,6 +1,6 @@
 # Proyecto Web para Trámites de Posgrado
 
-Este proyecto fue desarrollado en colaboración con el profesor Fernando Mesa, exdirector del Departamento de Mecánica y Mecatrónica de la Facultad de Ingeniería de la Universidad Nacional de Colombia, sede Bogotá. En el marco de soporte para el programa de acreditación internacional EUR-ACE del departamento. La aplicación tiene como objetivo automatizar y optimizar el manejo de archivos y solicitudes para estudiantes en trámites de posgrado y agilizar algunas tareas recurrentes del programa.
+En el marco del soporte para el programa de acreditación internacional EUR-ACE del departamento de Ingeniería Mecánica y Mecatrónica, este proyecto fue desarrollado en colaboración con el profesor Fernando Mesa, exdirector del Departamento de Mecánica y Mecatrónica de la Facultad de Ingeniería de la Universidad Nacional de Colombia, sede Bogotá. La aplicación tiene como objetivo automatizar y optimizar el manejo de archivos y solicitudes para estudiantes que realizaban trámites de posgrado y agilizar algunas tareas recurrentes del programa.
 
 ## Descripción
 
@@ -17,7 +17,7 @@ La página web permite la sincronización automática de archivos desde un Drive
 
 * **Frontend:** JavaScript, CSS, HTML5
 * **Backend:** Python
-* **Base de Datos:** Google Cloud
+* **Base de Datos:** Firebase - Firestore database
 * **Cloud Storage:** Google Drive API
 
 
