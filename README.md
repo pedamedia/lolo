@@ -15,9 +15,9 @@ La página web permite la sincronización automática de archivos desde un Drive
 
 ## Tecnologías Utilizadas
 
-* **Frontend:** React, TailwindCSS
-* **Backend:** Node.js, Express
-* **Base de Datos:** MongoDB
+* **Frontend:** JavaScript, Css, HTML5
+* **Backend:** Python
+* **Base de Datos:** Google Cloud
 * **Cloud Storage:** Google Drive API
 
 
