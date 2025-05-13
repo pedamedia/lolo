@@ -1,10 +1,10 @@
 # Proyecto Web para Trámites de Posgrado
 
-En el marco del soporte para el programa de acreditación internacional EUR-ACE del departamento de Ingeniería Mecánica y Mecatrónica, este proyecto fue desarrollado en colaboración con el profesor Fernando Mesa, exdirector del Departamento de Mecánica y Mecatrónica de la Facultad de Ingeniería de la Universidad Nacional de Colombia, sede Bogotá. La aplicación tiene como objetivo automatizar y optimizar el manejo de archivos y solicitudes para estudiantes que realizaban trámites de posgrado y agilizar algunas tareas recurrentes del programa.
+Proyecto académico realizado en el marco del soporte para el programa de acreditación internacional EUR-ACE del departamento de Ingeniería Mecánica y Mecatrónica de la facultad de Ingeniería de la Universidad Nacional de Colombia - sede bogotá. Este proyecto fue desarrollado en colaboración con el profesor Fernando Mesa, exdirector del departamento. La aplicación tiene como objetivo automatizar y optimizar el manejo de archivos y solicitudes para estudiantes que realizaban trámites de posgrado y agilizar algunas tareas recurrentes del programa.
 
 ## Descripción
 
-La página web permite la sincronización automática de archivos desde un Drive institucional hacia la plataforma, facilitando su visualización y gestión para estudiantes en procesos de posgrado. Adicionalmente, soporta el proceso inverso, permitiendo guardar de manera organizada las solicitudes y documentos relacionados con la facultad.
+La página web permite la sincronización automática de archivos desde un Drive institucional hacia la plataforma, facilitando su visualización y gestión para estudiantes en procesos de posgrado. Adicionalmente, soporta el proceso inverso, permitiendo guardar de manera organizada las solicitudes y documentos relacionados con el programa.
 
 ## Funcionalidades
 
@@ -19,11 +19,6 @@ La página web permite la sincronización automática de archivos desde un Drive
 * **Backend:** Python
 * **Base de Datos:** Firebase - Firestore database
 * **Cloud Storage:** Google Drive API
-
-
-## Contribución
-
-Si quieres contribuir al proyecto, por favor realiza un fork del repositorio y crea un pull request con los cambios propuestos.
 
 ## Créditos
 
